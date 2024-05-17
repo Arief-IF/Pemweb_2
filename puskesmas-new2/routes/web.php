@@ -18,6 +18,18 @@ Route::get('/salam', function () {
 });
 
 Route::get('/profile', function () {
+    return "Halaman Profile Arief Ichwan Fanani";
+});
+
+Route::get('/beranda', function () {
+    return "Halaman Beranda Laraval 11";
+});
+
+Route::get('/salam', function () {
+    return "Selamat Datang Arief Ichwan Fanani di Laravel 11 diMatkul Pemrograman Web";
+});
+
+Route::get('/profile', function () {
     return "Halaman Profile Arief Ichwan Fanani";
 });
 

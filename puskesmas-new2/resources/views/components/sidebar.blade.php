@@ -32,26 +32,32 @@
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <li class="nav-item">
+          <li class="nav-item has-treeview">
             <a href="/dashboard" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p> Dashboard</p>
+              <p>
+                Dashboard
+                <i class="right fas fa-angle-left"></i>
+              </p>
             </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/dashboard/kelurahan" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>Kelurahan</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/dashboard/pasien" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>Pasien</p>
+                </a>
+              </li>
+            </ul>
           </li>
-            <li class="nav-item">
-              <a href="/dashboard/kelurahan" class="nav-link">
-                <i class="nav-icon fas fa-th"></i>
-                <p> Kelurahan</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="/dashboard/pasien" class="nav-link">
-                <i class="nav-icon fas fa-th"></i>
-                <p>Pasien</p>
-              </a>
-            </li>
         </ul>
       </nav>
+
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->

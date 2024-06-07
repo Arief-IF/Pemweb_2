@@ -45,3 +45,12 @@ Route::get('/dashboard/kelurahan/show/{id}', [KelurahanController::class, 'show'
 Route::get('/dashboard/pasien/create', [PasienController::class, 'create']);
 Route::POST('/dashboard/pasien/store', [PasienController::class, 'store']);
 Route::get('/dashboard/pasien/show/{id}', [PasienController::class, 'show']);
+
+// Praktikum Laravel 5
+Route::get('/dashboard/kelurahan/edit/{id}', [KelurahanController::class, 'edit']);
+Route::put('/dashboard/kelurahan/update/{id}', [KelurahanController::class, 'update']);
+Route::delete('/dashboard/kelurahan/destroy/{id}', [KelurahanController::class, 'destroy']);
+
+Route::get('/dashboard/pasien/edit/{id}', [PasienController::class, 'edit']);
+Route::put('/dashboard/pasien/update/{id}', [PasienController::class, 'update']);
+Route::delete('/dashboard/pasien/destroy/{id}', [PasienController::class, 'destroy']);
